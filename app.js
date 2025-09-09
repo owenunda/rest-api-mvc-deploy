@@ -1,8 +1,8 @@
-const express = require('express')
-const movies = require('./movies.json')
-const crypto = require('node:crypto')
-const { validateMovie, validatePartialMovie } = require('./schemas/movies.js')
-const cors = require('cors')
+import express from 'express'
+import movies from './movies.json' with { type: 'json' }
+import crypto from 'node:crypto'
+import { validateMovie, validatePartialMovie } from './schemas/movies.js'
+import cors from 'cors'
 
 // inicializamos express
 const app = express()
